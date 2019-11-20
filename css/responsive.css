@@ -1,0 +1,383 @@
+@media (max-width: 1750px){
+    .best_3d_area .left_3d::before {
+        background-size: contain;
+        width: 100%;
+    }
+
+    .team_people_area {
+        padding-right: 100px;
+      }
+}
+@media (max-width: 1520px){
+
+    .shap_mobile {
+        padding-left: 0px;
+        width: 40%;
+        padding-top: 60px;
+    }
+    .text_3d {
+        width: 60%;
+        padding-top: 100px;
+    }
+    .shap_mobile img{
+        max-width: 100%;
+    }
+    .best_3d_area {
+        min-height: auto;
+    }
+    .shap_slider_inner {
+        margin-right: 114px;
+        margin-top: 226px;
+    }
+    .shap_slider_inner .owl-dots {
+        margin-top: 6px;
+        margin-right: 55px;
+    }
+}
+@media (max-width: 1300px){
+    .team_people_area {
+        padding-right: 0px;
+      }
+    .shap_slider_inner {
+        margin-right: 12px;
+    }
+    .shap_slider_inner .owl-dots {
+        margin-right: 126px;
+    }
+}
+@media (max-width: 1230px){
+    .best_3d_area .left_3d {
+        padding-top: 20px;
+        width: 100%;
+        float: none;
+        /* background-color: antiquewhite;  */
+    }
+    .best_3d_area .left_3d::before {
+        /* display: none; */
+        /* background: url(../img/DiscoPro.jpg); */
+        background-size: 100%;
+        background-repeat:no-repeat;
+        
+        /* background-color: antiquewhite; */
+    }
+    .shap_slider_inner .item {
+        color:white;
+    }
+    .shap_slider_inner .item p {
+        color:white;
+    }
+    .best_3d_area {
+        display: block;
+    }
+    .best_3d_area .right_text {
+        width: 100%;
+        float: none;
+        overflow: hidden;
+    }
+    .shap_slider_inner {
+        max-width: 500px;
+        float: none;
+        margin: 40px auto 0px;
+    }
+    .shap_slider_inner .owl-dots .owl-dot {
+        background: #000;
+    }
+}
+@media (max-width: 1199px){
+    .team_people_text p {
+        padding-bottom: 24px;
+    }
+
+}
+@media (max-width: 991px){
+    .main_menu_area {
+        padding: 0px 0px;
+    }
+    .navbar-light .navbar-brand {
+        padding: 20px 0px 20px 15px;
+    }
+    .main_menu_area .navbar .navbar-nav li {
+        display: block;
+        margin-right: 0px;
+    }
+    .main_menu_area .navbar .navbar-nav li a {      
+        display: block;
+        line-height: 50px;
+        padding: 0px 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, .05);
+    }
+    .main_menu_area .navbar .navbar-nav li:hover a, .main_menu_area .navbar .navbar-nav li.active a {
+        color: hsl(278, 83%, 55%);
+    }
+    .main_menu_area .navbar .navbar-nav li a:focus{
+        color: hsl(278, 89%, 48%);
+    }
+    .main_menu_area .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+        color: hsl(278, 88%, 51%);
+    }
+    .main_menu_area .navbar .navbar-nav {
+        display: block;
+        text-align: left;
+    }
+    .main_menu_area .navbar .navbar-collapse {
+        background: rgba(0, 0, 1, 0.3);
+        max-height: 306px;
+        overflow-y: scroll;
+    }
+    .main_menu_area .navbar .navbar-toggler {
+        padding: 0px 15px 0px 0px;
+        cursor: pointer;
+    }
+    .main_menu_area .navbar .navbar-nav li.submenu .dropdown-menu {
+        background: transparent;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .main_menu_area .navbar .navbar-nav li.submenu .dropdown-menu li a {
+        line-height: 50px;
+        padding: 0px 20px;
+    }
+    .text_3d {
+        padding-left: 15px;
+    }
+    .team_people_text {
+        max-width: 540px;
+        float: none;
+        margin: auto;
+    }
+    .team_img_inner {
+        max-width: 591px;
+        margin: 30px auto -20px;
+    }
+    .footer_widget_inner .col-sm-6{
+        margin-bottom: 30px;
+    }
+    .footer_widget_inner .col-sm-6:last-child{
+        margin-bottom: 0px;
+    }
+    .footer_widget_area {
+        padding: 20px 0px 20px 0px;
+    }
+    .challange_text_inner {
+        max-width: 545px;
+        float: none;
+        margin: auto;
+    }
+    .challange_img {
+       display: block;
+        margin-top: 50px;
+    }
+    .testimonials_slider::before {
+        display: none;
+    }
+    .testimonials_slider .owl-dots .owl-dot {
+        background: #0b1033;
+    }
+    .testimonials_slider .owl-dots .owl-dot.active {
+        background: #97ccfe;
+    }
+    .testimonials_area {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    
+}
+@media (max-width: 767px){
+    .shap_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 100%;
+    }
+    .talk_text a {
+        font-size: 38px;
+    }
+    .talk_text h4 {
+        font-size: 38px;
+    }
+    .text_3d {
+        width: 100%;
+        padding-top: 100px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .best_3d_area {
+       padding: 0px 15px;
+    }
+    .shap_slider_inner .owl-dots {
+        margin-right: 0;
+        text-align: center;
+    }
+    .buttons_area .submit_btn {
+        margin-left: 8px;
+        display: block;
+        margin-top: 20px;
+    }
+    .buttons_area .more_btn{
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: calc(50% - 2rem);
+      }
+}
+
+/* @media screen and (max-width: 668px) */
+
+@media (max-width: 668px){
+	.pc-banner {
+		background-size: auto 100%;
+    }
+    
+	.swiper-container {
+		margin: 15px 0 15px;
+	}
+
+	.swiper-slide {
+		-webkit-transform: scale(0.97);
+		transform: scale(0.97);
+	}
+	.swiper-slide-active,.swiper-slide-duplicate-active {
+		-webkit-transform: scale(0.97);
+		transform: scale(0.97);
+	}
+	.swiper-slide a:after {
+		position: absolute;
+		top: 0px;
+		left: 0;
+		display: block;
+		box-sizing: border-box;
+		content: "";
+		width: 100%;
+		height: 100%;
+		border-radius: 2px;
+		/* box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+		box-shadow: 0 4px 20px 0 rgba(0,0,0,0.3); */
+	}
+
+	.swiper-slide-active a:before {
+		position: absolute;
+		top: 410px;
+		left: 0;
+		display: block;
+		box-sizing: border-box;
+		content: "";
+		width: 100%;
+		height: 100%;
+		border-radius: 2px;
+		/* box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+		box-shadow: 0 4px 20px 0 rgba(0,0,0,0.3); */
+		z-index: 10002;
+    }
+    .swiper-slide a {
+		padding: 5px;
+		border-radius: 2px;
+    }
+    .swiper-slide img {
+		border-radius: 2px;
+    }
+    
+    .swiper-pagination {
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	.swiper-pagination-bullet {
+		background: #00a0e9;
+		margin-left: 2px;
+		margin-right: 2px;
+		width: 8px;
+		height: 8px;
+		margin-bottom: 2px;
+	}
+
+	.swiper-pagination-bullet-active {
+		width: 6px;
+		height: 6px;
+		background: #FFF;
+		border: 3px solid #00a0e9;
+		margin-bottom: 0;
+    }
+    
+    .button {
+		width: 100%;
+		top: -240px;
+		z-index: 1002;
+		position: relative;
+    }
+    
+    .button {
+		width: 100%;
+		top: -200px;
+		z-index: 1002;
+		position: relative;
+    }
+    
+    .button div {
+		width: 28px;
+		height: 28px;
+	}
+
+}
+
+
+@media (max-width: 575px){
+
+    .best_3d_area .left_3d::before {
+        display: none;    
+        /* background-color: antiquewhite; */
+    }
+    .shap_slider_inner .item {
+        color: #0b1033;
+    }
+    .shap_slider_inner .item p {
+        color: #7c8d93;
+    }
+    .team_img_inner .team_img_item img {
+        max-width: 100%;
+    }
+    .footer_widget_inner{
+        max-width: 320px;
+        margin: auto;
+    }
+    .footer_copyright{
+        text-align: center;
+    }
+    .challange_text_inner p {
+        padding-right: 0px;
+    }
+    .talk_area {
+        padding: 80px 0px 80px 0px;
+    }
+    .talk_text h4 {
+        font-size: 26px;
+        padding-bottom: 16px;
+    }
+    .talk_text a {
+        font-size: 20px;
+    }
+    .mileston_item {
+        text-align: center;
+    }
+    .elements_title {
+        text-align: center;
+    }
+    .card {
+        width: 100%;
+      }
+}
+@media (max-width: 375px){
+    .l_title h2 {
+        font-size: 32px;
+    }
+    .c_title h2 {
+        font-size: 32px;
+    }
+
+    .buttons_area .solid_btn {
+        margin-left: 0px;
+        display: inline-block;
+    }
+
+}
