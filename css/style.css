@@ -1420,10 +1420,12 @@ button.swiper-pagination-bullet {
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #bbbec1;
+  max-height: 700px;
 }
 
 .testimonials_slider {
   position: relative;
+  padding-top: 30px;
 }
 
 .testimonials_slider:before {
@@ -1461,12 +1463,12 @@ button.swiper-pagination-bullet {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  color: #0b1033;
+  color: #ca82c4;
 }
 
 .testimonials_slider .testi_item p {
   font-size: 15px;
-  color: #7c8d93;
+  color: #e0d9e2;
   line-height: 28px;
   font-weight: normal;
   padding: 20px 0px 55px 0px;
@@ -1484,6 +1486,18 @@ button.swiper-pagination-bullet {
   padding-bottom: 8px;
 }
 
+.team_title {
+  text-align: center;
+}
+.team_title h3{
+  text-align: center;
+  color: rgb(228, 74, 228);
+  padding-bottom: 30px;
+}
+.team_title img {
+  padding-bottom: 20px;
+}
+
 .testimonials_slider .testi_item .media .media-body h5 {
   font-family: "Roboto", sans-serif;
   color: #7c8d93;
@@ -1496,7 +1510,9 @@ button.swiper-pagination-bullet {
   z-index: 4;
   margin-top: 50px;
 }
-
+.testimonials_slider .owl-dots .owl-dot.active {
+  background: #f139c3;
+}
 .testimonials_slider .owl-dots .owl-dot {
   height: 6px;
   width: 6px;

@@ -102,10 +102,10 @@
         display: none;
     }
     .testimonials_slider .owl-dots .owl-dot {
-        background: #0b1033;
+        background: #fafafa;
     }
     .testimonials_slider .owl-dots .owl-dot.active {
-        background: #97ccfe;
+        background: #f139c3;
     }
     
 }
