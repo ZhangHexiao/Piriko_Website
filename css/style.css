@@ -456,8 +456,8 @@ i:before {
   -webkit-transform: scale(0.85);
   /* margin: 1px; */
   transform: scale(0.85);
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 80px;
+  margin-bottom: 100px;
 }
 
 .swiper-container-vertical > .swiper-wrapper {
@@ -1464,7 +1464,7 @@ button.swiper-pagination-bullet {
   left: 50%;
 }
 
-.how-it-works.row .col-6 {
+.how-it-works.row .col-8 {
 padding-top: 20px;
 
 }
