@@ -1395,7 +1395,7 @@ button.swiper-pagination-bullet {
 .team_img_inner {
   max-width: 591px;
   margin-bottom: -20px;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
 
 .team_img_inner .row {
@@ -1412,7 +1412,95 @@ button.swiper-pagination-bullet {
 .team_img_inner .team_img_item {
   overflow: hidden;
 }
+/*===================Timeline Area============================================== */
+.blue-bg {
+  /* background-color: #4D4545; */
+  /* color: #ED8D8D; */
+  height: 100%;
+}
 
+.circle {
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 50%;
+  background-color: rgb(206, 22, 206);
+  color:wheat;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row {
+  display: flex;
+}
+.how-it-works.row .col-2 {
+  display: inline-flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid rgb(33, 211, 63);
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full-right::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+.how-it-works.row .col-2.full-left::after {
+  height: 100%;
+  left: 50%;
+}
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid #ED8D8D;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .corner {
+  border: 3px solid rgb(73, 142, 221);
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+/*===================End Timeline Area============================================== */
 /*===================End Milestone Area css============================================== */
 /*==========================Our team============================================== */
 .team_area {
@@ -1860,91 +1948,3 @@ button.swiper-pagination-bullet {
 }
 /*===============================Button Area=============================================*/
 /*===========================End========================================== */
-
-.blue-bg {
-  background-color: #4D4545;
-  color: #ED8D8D;
-  height: 100%;
-}
-
-.circle {
-  font-weight: bold;
-  padding: 15px 20px;
-  border-radius: 50%;
-  background-color: #ED8D8D;
-  color: #4D4545;
-  max-height: 50px;
-  z-index: 2;
-}
-
-.how-it-works.row {
-  display: flex;
-}
-.how-it-works.row .col-2 {
-  display: inline-flex;
-  align-self: stretch;
-  align-items: center;
-  justify-content: center;
-}
-.how-it-works.row .col-2::after {
-  content: "";
-  position: absolute;
-  border-left: 3px solid #ED8D8D;
-  z-index: 1;
-}
-.how-it-works.row .col-2.bottom::after {
-  height: 50%;
-  left: 50%;
-  top: 50%;
-}
-.how-it-works.row .col-2.full-right::after {
-  height: 100%;
-  left: calc(50% - 3px);
-}
-
-.how-it-works.row .col-2.top::after {
-  height: 50%;
-  left: 50%;
-  top: 0;
-}
-.how-it-works.row .col-2.full-left::after {
-  height: 100%;
-  left: 50%;
-}
-
-.timeline div {
-  padding: 0;
-  height: 40px;
-}
-.timeline hr {
-  border-top: 3px solid #ED8D8D;
-  margin: 0;
-  top: 17px;
-  position: relative;
-}
-.timeline .col-2 {
-  display: flex;
-  overflow: hidden;
-}
-.timeline .corner {
-  border: 3px solid #ED8D8D;
-  width: 100%;
-  position: relative;
-  border-radius: 15px;
-}
-.timeline .top-right {
-  left: 50%;
-  top: -50%;
-}
-.timeline .left-bottom {
-  left: -50%;
-  top: calc(50% - 3px);
-}
-.timeline .top-left {
-  left: -50%;
-  top: -50%;
-}
-.timeline .right-bottom {
-  left: 50%;
-  top: calc(50% - 3px);
-}
