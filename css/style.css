@@ -8,17 +8,8 @@
   box-sizing: border-box;
 }
 
-/* html {
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 300;
-  color: #333;
-  font-family: "Nunito Sans", sans-serif;
-} */
-
 body {
 font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-/* font-size: 14px; */
 color: #000;
 margin: 0;
 padding: 0;
@@ -30,14 +21,6 @@ ul {
   padding: 0px;
 }
 
-/* body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  background-attachment: fixed;
-} */
-
-
 .row.m0 {
   margin: 0px;
 }
@@ -45,14 +28,6 @@ ul {
 .p0 {
   padding: 0px;
 }
-
-body {
-  line-height: 28px;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
-
 
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0px;
@@ -97,7 +72,6 @@ i:before {
 ============================================================================================ */
 .c_title {
   text-align: center;
-  /* padding-bottom: 20px; */
 }
 
 .c_title img {
@@ -496,22 +470,21 @@ margin-top: 5%;
 .card:nth-child(even):hover .back {
   transform: rotateY(0deg);
 }
-/* Team People Area css
+/* Milestone Area css
 ============================================================================================ */
-.team_people_area {
+.milestone-area {
   overflow: hidden;
-  padding-top: 90px;
+  padding-top: 20px;
   margin-bottom:30px;
   padding-right: 100px;
-  /* background-color: black; */
 }
 
-.team_people_text {
+.milestone_text {
   max-width: 540px;
   float: right;
 }
 
-.team_people_text p {
+.milestone_text p {
   font-family: "Roboto", sans-serif;
   color: #7c8d93;
   font-size: 15px;
@@ -542,7 +515,7 @@ margin-top: 5%;
   overflow: hidden;
 }
 
-/* End Team People Area css
+/* End Milestone Area css
 ============================================================================================ */
 
 /* Best 3d Area css
@@ -2103,7 +2076,7 @@ cursor: pointer;
 
 /* ////////////////////////////////////// */
 
-.testimonials_area {
+.team_area {
   /* position: relative; */
   background: url(../img/team.png) no-repeat scroll center center;
   padding-top: 30px;
