@@ -79,35 +79,6 @@ i:before {
   font-weight: 500;
 }
 
-.l_title {
-  padding-bottom: 55px;
-}
-
-.l_title img {
-  padding-bottom: 30px;
-}
-
-.l_title h6 {
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #7c8d93;
-  padding-bottom: 10px;
-}
-
-.l_title h2 {
-  font-size: 48px;
-  color: #0b1033;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
-
-.l_title h2 span {
-  font-style: italic;
-  color: #6fbbfe;
-}
-
 /*=============Main Menu Area css============================ */
 .main_menu_area {
   position: absolute;
@@ -477,6 +448,7 @@ i:before {
 }
 
 .swiper-slide {
+  transition: transform 1s;
   -webkit-transition: transform 1s;
   -moz-transition: transform 1s;
   -ms-transition: transform 1s;
@@ -544,6 +516,7 @@ i:before {
 
 .swiper-slide {
   -webkit-flex-shrink: 0;
+  flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex-shrink: 0;
   width: 100%;
@@ -805,16 +778,7 @@ button.swiper-pagination-bullet {
   pointer-events: none;
   z-index: 10;
 }
-
-.swiper-container-3d .swiper-slide-shadow-left {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(0, 0, 0, 0.5)),
-    to(rgba(0, 0, 0, 0))
-  );
-  background-image: -webkit-linear-gradient(
+  /* background-image: -webkit-linear-gradient(
     right,
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0)
@@ -834,7 +798,7 @@ button.swiper-pagination-bullet {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0)
   );
-}
+} */
 
 .swiper-container-3d .swiper-slide-shadow-right {
   background-image: -webkit-gradient(
@@ -928,6 +892,7 @@ button.swiper-pagination-bullet {
 
 .swiper-container-coverflow .swiper-wrapper,
 .swiper-container-flip .swiper-wrapper {
+  perspective: 1200px;
   -ms-perspective: 1200px;
 }
 
@@ -1068,6 +1033,7 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar {
   border-radius: 10px;
   position: relative;
+  touch-action: none;
   -ms-touch-action: none;
   background: rgba(0, 0, 0, 0.1);
 }
@@ -1173,6 +1139,7 @@ button.swiper-pagination-bullet {
 }
 
 .none-effect {
+  transition: none;
   -webkit-transition: none;
   -moz-transition: none;
   -ms-transition: none;
