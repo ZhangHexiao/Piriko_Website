@@ -1372,7 +1372,7 @@ button.swiper-pagination-bullet {
 /*==========================Milestone Area css==============================================*/
 .milestone-area {
   overflow: hidden;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   margin-bottom: 30px;
   padding-right: 100px;
 }
@@ -1421,7 +1421,7 @@ button.swiper-pagination-bullet {
 
 .circle {
   font-weight: bold;
-  padding: 15px 20px;
+  padding: 15px 7px;
   border-radius: 50%;
   background-color: rgb(206, 22, 206);
   color:wheat;
@@ -1462,6 +1462,11 @@ button.swiper-pagination-bullet {
 .how-it-works.row .col-2.full-left::after {
   height: 100%;
   left: 50%;
+}
+
+.how-it-works.row .col-6 {
+padding-top: 20px;
+
 }
 
 .timeline div {
