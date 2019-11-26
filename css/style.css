@@ -328,7 +328,6 @@ i:before {
 .feature_area {
   margin-top: 5%;
 }
-
 .content {
   padding-bottom: 40px;
   width: 100%;
@@ -340,7 +339,6 @@ i:before {
   max-width: 1200px;
   /* background-color: #ecf0f9; */
 }
-
 .card {
   padding-top: 3%;
   color: inherit;
@@ -440,6 +438,49 @@ i:before {
   transform: rotateY(0deg);
 }
 /* <!--=================End of Feature Section===================================--> */
+
+/* <!--=================Why Piriko Section===================================--> */
+.feature_item {
+  padding: 20px 20px 20px 20px;
+  -webkit-transition: all 400ms linear 0s;
+  -o-transition: all 400ms linear 0s;
+  transition: all 400ms linear 0s;
+}
+
+.feature_item h4 {
+  text-align: center;
+  color: #0b1033;
+  font-family: "Roboto", sans-serif;
+  /* font-weight: bold; */
+  font-size: 20px;
+  padding: 20px 0px 0px 0px;
+}
+
+.feature_item p {
+  font-size: 15px;
+  line-height: 28px;
+  font-family: "Roboto", sans-serif;
+  color: #7c8d93;
+  font-weight: 500;
+  max-width: 290px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.feature_item .more_btn {
+  opacity: 0;
+}
+
+.feature_item:hover {
+  -webkit-box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
+}
+
+.feature_item:hover .more_btn {
+  opacity: 1;
+}
+/* <!--=================End of Why Piriko area===================================--> */
+
 /* <!--=================Event Swipe Section===================================--> */
 .pc-banner {
   width: 100%;
@@ -1531,7 +1572,7 @@ padding-top: 20px;
 
 .testimonials_slider:before {
   content: "";
-  background: url(../img/3d-shap.png) no-repeat scroll center center;
+  /* background: url(../img/3d-shap.png) no-repeat scroll center center; */
   height: 600px;
   max-width: 524px;
   width: 100%;
