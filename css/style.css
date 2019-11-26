@@ -374,11 +374,12 @@ i:before {
   transform-style: preserve-3d;
   transition: ease-in-out 600ms;
 }
-.back .f_icon {
+/* .back .f_icon {
   min-height: 91px;
   position: relative;
   padding-top: 40%;
-}
+} */
+
 .back .f_icon img {
   position: absolute;
   bottom: 0px;
@@ -421,7 +422,13 @@ i:before {
 .back {
   background: #fff;
   transform: rotateY(-180deg);
-  padding: 0 2em;
+  padding: 1em 2em;
+}
+.back p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 35px;
 }
 .card:hover .back {
   transform: rotateY(0deg);
