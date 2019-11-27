@@ -445,11 +445,12 @@ i:before {
   -webkit-transition: all 400ms linear 0s;
   -o-transition: all 400ms linear 0s;
   transition: all 400ms linear 0s;
+  text-align: center;
 }
 
 .feature_item h4 {
   text-align: center;
-  color: #0b1033;
+  color: #4d3853;
   font-family: "Roboto", sans-serif;
   /* font-weight: bold; */
   font-size: 20px;
@@ -460,7 +461,7 @@ i:before {
   font-size: 15px;
   line-height: 28px;
   font-family: "Roboto", sans-serif;
-  color: #7c8d93;
+  color:black;
   font-weight: 500;
   max-width: 290px;
   margin: auto;
@@ -1633,11 +1634,12 @@ padding-top: 20px;
 }
 .team_title h3{
   text-align: center;
-  color: rgb(228, 74, 228);
-  padding-bottom: 30px;
+  color: rgb(219, 211, 219);
+  padding-bottom: 10px;
+  font-size: 35px;
 }
 .team_title img {
-  padding-bottom: 20px;
+  /* padding-bottom: 10px; */
 }
 
 .testimonials_slider .testi_item .media .media-body h5 {
