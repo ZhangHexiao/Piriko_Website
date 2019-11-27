@@ -1558,7 +1558,7 @@ padding-top: 20px;
 /*==========================Our team============================================== */
 .team_area {
   /* position: relative; */
-  background: url(../img/team.png) no-repeat scroll center center;
+  background: url(../img/team/team-min.png) no-repeat scroll center center;
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #bbbec1;
@@ -1767,7 +1767,8 @@ padding-top: 20px;
   transition: ease-in-out 600ms;
 }
 .team_front {
-  display: flex;
+  /* display: flex; */
+  text-align: center;
   justify-content: center;
   align-items: center;
   background-size: cover;
@@ -1790,6 +1791,11 @@ padding-top: 20px;
   opacity: 0.25;
   z-index: -1;
 }
+.team_front h4{
+  padding-top: 200px; 
+  padding-bottom: 10px;
+}
+
 .team_card:hover .team_front {
   transform: rotateY(180deg);
 }
