@@ -423,10 +423,10 @@ i:before {
   padding: 1em 2em;
 }
 .back p {
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  line-height: 35px;
+  line-height: 30px;
 }
 .card:hover .back {
   transform: rotateY(0deg);
@@ -1723,6 +1723,10 @@ padding-top: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
+
+/* owl-carousel{
+  loop:true;
+} */
 
 /*==================================Team Card Area======================================================= */
 /* .content {

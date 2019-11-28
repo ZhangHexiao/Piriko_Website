@@ -107,7 +107,10 @@
                 margin: 130,
                 items: 3,
                 nav:false,
-                autoplay: false,
+                autoplay: true,
+                autoPlaySpeed: 5000,
+                autoPlayTimeout: 1500,
+                autoplayHoverPause:true,
                 smartSpeed: 1500,
                 dots:true,
                 center: true,
@@ -140,160 +143,160 @@
     /*----------------------------------------------------*/
     /*  Shap Slider
     /*----------------------------------------------------*/
-    function shap_carousel(){
-        if ( $('.shap_slider_inner').length ){
-            $('.shap_slider_inner').owlCarousel({
-                loop:true,
-                margin: 0,
-                items: 1,
-                nav:false,
-                autoplay: false,
-                smartSpeed: 1500,
-                dots:true,
-                center: true
-            })
-        }
-    }
-    shap_carousel();
+    // function shap_carousel(){
+    //     if ( $('.shap_slider_inner').length ){
+    //         $('.shap_slider_inner').owlCarousel({
+    //             loop:true,
+    //             margin: 0,
+    //             items: 1,
+    //             nav:false,
+    //             autoplay: false,
+    //             smartSpeed: 1500,
+    //             dots:true,
+    //             center: true
+    //         })
+    //     }
+    // }
+    // shap_carousel();
     
    
     /*----------------------------------------------------*/
     /*  Skill Bar
     /*----------------------------------------------------*/
-    function progressBarConfig () {
-	  var progressBar = $('.progress');
-	  if(progressBar.length) {
-	    progressBar.each(function () {
-	      var Self = $(this);
-	      Self.appear(function () {
-	        var progressValue = Self.data('value');
+    // function progressBarConfig () {
+	//   var progressBar = $('.progress');
+	//   if(progressBar.length) {
+	//     progressBar.each(function () {
+	//       var Self = $(this);
+	//       Self.appear(function () {
+	//         var progressValue = Self.data('value');
 
-	        Self.find('.progress-bar').animate({
-	          width:progressValue+'%'           
-	        }, 1000);
+	//         Self.find('.progress-bar').animate({
+	//           width:progressValue+'%'           
+	//         }, 1000);
 
-	        Self.find('.number').countTo({
-	          from: 0,
-	            to: progressValue,
-	            speed: 1000
-	        });
-	      });
-	    })
-	  }
-	}
-    progressBarConfig ();
+	//         Self.find('.number').countTo({
+	//           from: 0,
+	//             to: progressValue,
+	//             speed: 1000
+	//         });
+	//       });
+	//     })
+	//   }
+	// }
+    // progressBarConfig ();
     
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
+    // $('.counter').counterUp({
+    //     delay: 10,
+    //     time: 1000
+    // });
     
     
     /*----------------------------------------------------*/
     /*  portfolio_isotope
     /*----------------------------------------------------*/
-    function home_gallery(){
-        if ( $('.ms_portfolio_inner').length ){
-            // Activate isotope in container
-            $(".ms_portfolio_inner").imagesLoaded( function() {
-                $(".ms_portfolio_inner").isotope({
-                    itemSelector: '.ms_p_item',
-                    layoutMode: 'masonry',
-                    percentPosition:true,
-                    columnWidth: 1,
-                }); 
-            }); 
-        }
-    }
-    home_gallery();
+    // function home_gallery(){
+    //     if ( $('.ms_portfolio_inner').length ){
+    //         // Activate isotope in container
+    //         $(".ms_portfolio_inner").imagesLoaded( function() {
+    //             $(".ms_portfolio_inner").isotope({
+    //                 itemSelector: '.ms_p_item',
+    //                 layoutMode: 'masonry',
+    //                 percentPosition:true,
+    //                 columnWidth: 1,
+    //             }); 
+    //         }); 
+    //     }
+    // }
+    // home_gallery();
     
     /*----------------------------------------------------*/
     /*  Portfolio js
     /*----------------------------------------------------*/
-    function portfolio_isotope(){
-        if ( $('.portfolio_filter ul li').length ){
-            // Add isotope click function
-            $(".portfolio_filter ul li").on('click',function(){
-                $(".portfolio_filter ul li").removeClass("active");
-                $(this).addClass("active");
+    // function portfolio_isotope(){
+    //     if ( $('.portfolio_filter ul li').length ){
+    //         // Add isotope click function
+    //         $(".portfolio_filter ul li").on('click',function(){
+    //             $(".portfolio_filter ul li").removeClass("active");
+    //             $(this).addClass("active");
 
-                var selector = $(this).attr("data-filter");
-                $(".ms_portfolio_inner").isotope({
-                    filter: selector,
-                    animationOptions: {
-                        duration: 450,
-                        easing: "linear",
-                        queue: false,
-                    }
-                });
-                return false;
-            });
-        }
-    }
+    //             var selector = $(this).attr("data-filter");
+    //             $(".ms_portfolio_inner").isotope({
+    //                 filter: selector,
+    //                 animationOptions: {
+    //                     duration: 450,
+    //                     easing: "linear",
+    //                     queue: false,
+    //                 }
+    //             });
+    //             return false;
+    //         });
+    //     }
+    // }
     
-    portfolio_isotope();
+    // portfolio_isotope();
     
     
-    $(document).ready(function() {
-        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-            disableOn: 700,
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
+    // $(document).ready(function() {
+    //     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+    //         disableOn: 700,
+    //         type: 'iframe',
+    //         mainClass: 'mfp-fade',
+    //         removalDelay: 160,
+    //         preloader: false,
 
-            fixedContentPos: false
-        });
-    });
+    //         fixedContentPos: false
+    //     });
+    // });
     
     /*----------------------------------------------------*/
     /*  Google map js
     /*----------------------------------------------------*/
     
-    if ( $('#mapBox1').length ){
-        var $lat = $('#mapBox1').data('lat');
-        var $lon = $('#mapBox1').data('lon');
-        var $zoom = $('#mapBox1').data('zoom');
-        var $marker = $('#mapBox1').data('marker');
-        var $info = $('#mapBox1').data('info');
-        var $markerLat = $('#mapBox1').data('mlat');
-        var $markerLon = $('#mapBox1').data('mlon');
-        var map = new GMaps({
-        el: '#mapBox1',
-        lat: $lat,
-        lng: $lon,
-        scrollwheel: false,
-        scaleControl: true,
-        streetViewControl: false,
-        panControl: true,
-        disableDoubleClickZoom: true,
-        mapTypeControl: false,
-        zoom: $zoom,
-            styles: [
-    {
-        "featureType": "administrative.country",
-        "elementType": "geometry",
-        "stylers": [
-                        {
-                            "visibility": "simplified"
-                        },
-                        {
-                            "hue": "#ff0000"
-                        }
-                    ]
-                }
-            ]
-        });
+    // if ( $('#mapBox1').length ){
+    //     var $lat = $('#mapBox1').data('lat');
+    //     var $lon = $('#mapBox1').data('lon');
+    //     var $zoom = $('#mapBox1').data('zoom');
+    //     var $marker = $('#mapBox1').data('marker');
+    //     var $info = $('#mapBox1').data('info');
+    //     var $markerLat = $('#mapBox1').data('mlat');
+    //     var $markerLon = $('#mapBox1').data('mlon');
+    //     var map = new GMaps({
+    //     el: '#mapBox1',
+    //     lat: $lat,
+    //     lng: $lon,
+    //     scrollwheel: false,
+    //     scaleControl: true,
+    //     streetViewControl: false,
+    //     panControl: true,
+    //     disableDoubleClickZoom: true,
+    //     mapTypeControl: false,
+    //     zoom: $zoom,
+    //         styles: [
+    // {
+    //     "featureType": "administrative.country",
+    //     "elementType": "geometry",
+    //     "stylers": [
+    //                     {
+    //                         "visibility": "simplified"
+    //                     },
+    //                     {
+    //                         "hue": "#ff0000"
+    //                     }
+    //                 ]
+    //             }
+    //         ]
+    //     });
 
-        map.addMarker({
-            lat: $markerLat,
-            lng: $markerLon,
-            icon: $marker,    
-            infoWindow: {
-              content: $info
-            }
-        })
-    }
+    //     map.addMarker({
+    //         lat: $markerLat,
+    //         lng: $markerLon,
+    //         icon: $marker,    
+    //         infoWindow: {
+    //           content: $info
+    //         }
+    //     })
+    // }
     
     
     
