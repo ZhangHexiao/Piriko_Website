@@ -1472,8 +1472,8 @@ button.swiper-pagination-bullet {
   font-weight: bold;
   padding: 15px 7px;
   border-radius: 50%;
-  background-color: rgb(206, 22, 206);
-  color:wheat;
+  background-color: rgb(245, 241, 220);
+  color:rgb(20, 20, 19);
   max-height: 50px;
   z-index: 2;
 }
@@ -1490,7 +1490,7 @@ button.swiper-pagination-bullet {
 .how-it-works.row .col-2::after {
   content: "";
   position: absolute;
-  border-left: 3px solid rgb(33, 211, 63);
+  border-left: 3px solid rgb(18, 19, 18);
   z-index: 1;
 }
 .how-it-works.row .col-2.bottom::after {
@@ -1523,7 +1523,7 @@ padding-top: 20px;
   height: 40px;
 }
 .timeline hr {
-  border-top: 3px solid #ED8D8D;
+  border-top: 3px solid rgb(17, 16, 16);
   margin: 0;
   top: 17px;
   position: relative;
@@ -1533,7 +1533,7 @@ padding-top: 20px;
   overflow: hidden;
 }
 .timeline .corner {
-  border: 3px solid rgb(73, 142, 221);
+  border: 3px solid rgb(10, 10, 10);
   width: 100%;
   position: relative;
   border-radius: 15px;
