@@ -23,6 +23,18 @@
   max-width: 750px;
 }
 
+.subscribeToast {
+  display: none;
+  margin: 10px auto 20px auto !important;
+  text-align: center;
+  font-size: 15px;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: lightgreen;
+}
+
 .email-input-class {
   border-radius: 50px 0 0 50px;
   padding-left: 25px;

@@ -59,22 +59,48 @@ function postRequest(url, obj){
   Http.send(JSON.stringify(obj));
 }
 
+var subscribeInput = document.getElementById("subscribeInputId");
+subscribeInput.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        saveSubscriber();
+    }
+});
+
 function saveSubscriber() {
-    var input = document.getElementById("subscribeInputId");
-    let email = input.value;
+    let email = subscribeInput.value;
     email = email && typeof email ? email.replace(/\s/g, '') : '';    //strip spaces
     if(isValidEmail(email)) {
       var url = 'https://4dm5wtnzqc.execute-api.us-east-1.amazonaws.com/production/subscribe';
       postRequest(url, { email: email });
-      //Todo - show success message
+      subscribeInput.value = '';
+      subscribeInput.style.setProperty("border", "1px solid green");
+      showToast(true);
     } else {
-      //Todo - show there is a problem with the email error message
+      subscribeInput.style.setProperty("border", "1px solid red");
+      showToast(false);
     }
-    input.value = '';
-}
 
+}
 
 function isValidEmail(email) {
   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   return regex.test(email);
+}
+
+var subscribeToast = document.getElementById("subscribeToastId");
+function showToast(isSuccess) {
+    if(isSuccess) {
+        subscribeToast.innerHTML = "Thank you for subscribing to Piriko.";
+        subscribeToast.style.setProperty("background-color", "lightgreen");
+        setTimeout(()=>{
+            subscribeInput.style.setProperty("border", "1px solid #ced4da");
+            subscribeToast.style.setProperty("display", "none");
+        }, 3000);
+    } else {
+        subscribeToast.innerHTML = "There is a problem with the email. Please check.";
+        subscribeToast.style.setProperty("background-color", "#FF3232");
+    }
+    subscribeToast.style.setProperty("display", "block");
+
 }
