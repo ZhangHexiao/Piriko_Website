@@ -59,6 +59,12 @@ i:before {
   text-align: center;
 }
 
+.poster img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .c_title img {
   padding-bottom: 30px;
 }
