@@ -770,6 +770,20 @@
     <footer class="footr_area" id="contact">
         <div class="footer_widget_area">
             <div class="container">
+                <div class="subscribe-container">
+                    <div class="f_title">
+                        <h3>Sign-up to receive updates on the Beta Launch in Q1 2020</h3>
+                    </div>
+                    <div class="input-group">
+                        <input id="subscribeInputId" type="text" class="form-control email-input-class"
+                               placeholder="Enter your e-mail here..."
+                               aria-label="Your e-mail address here">
+                        <span class="input-group-btn">
+                          <button onclick="saveSubscriber()"  class="btn btn-secondary submit_btn" type="submit">Subscribe</button>
+                        </span>
+                    </div>
+                    <p id="subscribeToastId" class="subscribeToast"></p>
+                </div>
                 <div class="row footer_widget_inner">
                     <div class="col-lg-4 col-sm-6">
                         <aside class="f_widget f_about_widget">
@@ -792,20 +806,6 @@
                                             src="img/footer_icon/facebook.png" alt=""></a></li>
                                 <li><a href="#"><img src="img/footer_icon/twitter.png" alt=""></a></li>
                             </ul>
-                        </aside>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <aside class="f_widget f_subs_widget">
-                            <div class="f_title">
-                                <h3>Sign-up to receive updates on the Beta Launch in Q1 2020</h3>
-                            </div>
-                            <div class="input-group">
-                                <input type="submit" class="form-control" placeholder="Your e-mail"
-                                    aria-label="Your e-mail address here">
-                                <span class="input-group-btn">
-                                    <button onclick="saveSubscriber()" id="subscribeInputId" class="btn btn-secondary submit_btn" type="submit">Subscribe</button>
-                                </span>
-                            </div>
                         </aside>
                     </div>
                 </div>

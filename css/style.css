@@ -10,6 +10,24 @@
   box-sizing: border-box;
 }
 
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0 ;
+}
+
+.subscribe-container > * {
+  max-width: 750px;
+}
+
+.email-input-class {
+  border-radius: 50px 0 0 50px;
+  padding-left: 25px;
+}
+
 body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #000;

@@ -1,3 +1,4 @@
+var baseUrl = 'https://4dm5wtnzqc.execute-api.us-east-1.amazonaws.com/production/';
 function createCORSRequest(method, url) {
   var xhr = new XMLHttpRequest();
   if ("withCredentials" in xhr) {
@@ -29,8 +30,7 @@ if (!Http) {
 
 Http.onreadystatechange = function(){
   if(Http.readyState == 4){
-    console.log(Http.status)
-    hideSearchSpinnerEndPoint();
+    console.log(Http.status);
     if(Http.status == 200){
         var result = this.responseText;
         var jsonResult = JSON.parse(result);
@@ -45,7 +45,7 @@ Http.onreadystatechange = function(){
       console.log("Error: ", Http.response);
     }
   }
-}
+};
 
 function getRequest(url){
   Http.open('GET',url, true);
@@ -60,7 +60,8 @@ function postRequest(url, obj){
 }
 
 function saveSubscriber() {
-    var email = document.getElementById("subscribeInputId").value;
+    var input = document.getElementById("subscribeInputId");
+    let email = input.value;
     email = email && typeof email ? email.replace(/\s/g, '') : '';    //strip spaces
     if(isValidEmail(email)) {
       var url = 'https://4dm5wtnzqc.execute-api.us-east-1.amazonaws.com/production/subscribe';
@@ -69,6 +70,7 @@ function saveSubscriber() {
     } else {
       //Todo - show there is a problem with the email error message
     }
+    input.value = '';
 }
 
 
