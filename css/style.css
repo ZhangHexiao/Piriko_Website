@@ -9,6 +9,14 @@
 *:after {
   box-sizing: border-box;
 }
+.menu_icon {
+  height: 45px;
+}
+@media (max-width: 499px) {
+  .menu_icon {
+    display: none;
+  }
+}
 
 .store_icons{
   width: 18%;
@@ -19,8 +27,11 @@
   left: 120px;
 }
 
+.store_icons {
+  display: none;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 499px) {
   .store_icons{
     width: 50%;
     display: flex;
@@ -314,7 +325,7 @@ i:before {
   background-size: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 499px) {
   .main_slider_area {
     height: 950px;
   }
