@@ -240,37 +240,39 @@
             <img src="img/icon/title-icon.png" alt="">
 <!--            <h3>Greetings</h3>-->
         </div>
-        <div class="container">
-<!--            <div class="poster">-->
-<!--                &lt;!&ndash;                <img src="img/icon/poster.jpg" alt="">&ndash;&gt;-->
-<!--                &lt;!&ndash; <h2>We are young but bold</h2> &ndash;&gt;-->
+<!--        <div class="card_blog">-->
+<!--            <div class="container_blog">-->
+<!--                <h4><b>John Doe</b></h4>-->
+<!--                <p>Architect & Engineer</p>-->
 <!--            </div>-->
+<!--        </div>-->
+        <div class="card_blog">
+            <div class="container_blog">
+                <h5 style="padding-top: 20px;">The App That Turns Your Campus into a Playground</h5>
+                <p style="color: grey; padding-left: 10px; padding-top: 10px">By Leander Zemke  |  Feb. 17 2020</p>
 
-            <h3 class="c_title">The App That Turns Your Campus into a Playground</h3>
-            <br>
-            <p style="color: grey; padding-left: 10px; text-align: center;">By Leander Zemke  |  Feb. 17 2020</p>
+                <div>
+                    <p style=""><br>We are a team of Concordia and McGill students who want to LEVEL UP student life!
+                        Piriko turns a campus into a playground, ready to be explored. By focusing our attention on connecting students with upcoming events, Piriko transforms the drab events calendar into a lively boiling pot of activity. While Facebook and Instagram are geared towards sharing media with the circle of people you already know, Piriko makes self-hosted events instantly visible to users, allowing you to promote your events with everyone around you.
+                    </p>
+                    <p style="margin-left: 20px; padding-right: 20px; display: none" id="more">
+                        <br>
+                        Now to the dope parts: Piriko’s live story feature will allow users to share footage directly from events, giving you a sense of the event’s energy, and  tuning you into what your following is up to. Geolocation will automatically sign in event guests so that people can get an overview of who’s who … so you awkward kids can break the damn ice.
+                        <br><br>
+                        We are launching our Beta on iOS and Android super-duper soon.
+                        This BETA is not for the faint of heart… it’s for the kids that want to be part of the app creation process, as well as give back to their student community.
+                        <br><br>
+                        Be warned: the beta is a WORK-IN-PROGRESS!!; you should expect glitches and some unfinished features. Updates will be frequent, and the released versions may not be stable. Some features will suck; others will be boring… such is life. This is why we NEED your feedback so that we can replace sucky features with better ones!
+                        <br><br>
+                        Okay, now to the best part: Being a Piriko Beta tester will make you part of a super exclusive club that will give you access to private parties and events that aim to test the geolocation, live story, and networking features.
+                        <br><br>
+                        Visit: <a href="www.piriko.app">www.piriko.app</a> and subscribe to our newsletter to stay informed and become part of the app development process.
+                    </p>
+                    <u><i><p style='color: grey; padding-bottom: 20px; padding-top: 20px;' onclick="myFunction()" id="myBtn">Read more</p></i></u>
 
-            <div class="row feature_inner">
-                <!--<div class="col-lg-4 col-sm-6">-->
-                <!--<div class="feature_item">-->
-                <!-- <h4>Inclusion and mental health are vital issues that need to be addressed by universities</h4>-->
-                <br>
-                <p style="padding: 20px">We are a team of Concordia and McGill students who want to LEVEL UP student life!
-                    Piriko turns a campus into a playground, ready to be explored. By focusing our attention on connecting students with upcoming events, Piriko transforms the drab events calendar into a lively boiling pot of activity. While Facebook and Instagram are geared towards sharing media with the circle of people you already know, Piriko makes self-hosted events instantly visible to users, allowing you to promote your events with everyone around you.
-                    <br><br>
-                    Now to the dope parts: Piriko’s live story feature will allow users to share footage directly from events, giving you a sense of the event’s energy, and  tuning you into what your following is up to. Geolocation will automatically sign in event guests so that people can get an overview of who’s who … so you awkward kids can break the damn ice.
-                    <br><br>
-                    We are launching our Beta on iOS and Android super-duper soon.
-                    This BETA is not for the faint of heart… it’s for the kids that want to be part of the app creation process, as well as give back to their student community.
-                    <br><br>
-                    Be warned: the beta is a WORK-IN-PROGRESS!!; you should expect glitches and some unfinished features. Updates will be frequent, and the released versions may not be stable. Some features will suck; others will be boring… such is life. This is why we NEED your feedback so that we can replace sucky features with better ones!
-                    <br><br>
-                    Okay, now to the best part: Being a Piriko Beta tester will make you part of a super exclusive club that will give you access to private parties and events that aim to test the geolocation, live story, and networking features.
-                    <br><br>
-                    Visit: <a href="www.Piriko.app">www.Piriko.app</a> and subscribe to our newsletter to stay informed and become part of the app development process.
+                </div>
 
-                </p>
-                <!--<p>­­Students struggle to feel included and connected with their university campus
+             <!--<p>­­Students struggle to feel included and connected with their university campus
                    <br>&#10056<br>
                     ­It can be overwhelming and difficult to make new friends or meet desirable contacts at events
                     <br>&#10056<br>
@@ -860,6 +862,36 @@
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/photoSwiper.js"></script>
     <script src="js/endpoint.js"></script>
+    <script>
+        function myFunction() {
+            var more = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+            if (more.style.display === "none") {
+                more.style.display = "inline";
+                more.style.paddingLeft = '20px';
+                more.style.paddingRight = '20px';
+
+                btnText.innerHTML = "Read less";
+            }
+            else{
+                more.style.display = "none";
+                btnText.innerHTML = "Read more";
+            }
+            // var dots = document.getElementById("dots");
+            // var moreText = document.getElementById("more");
+            // var btnText = document.getElementById("myBtn");
+            //
+            // if (dots.style.display === "none") {
+            //     dots.style.display = "inline";
+            //     btnText.innerHTML = "Read more";
+            //     moreText.style.display = "none";
+            // } else {
+            //     dots.style.display = "none";
+            //     btnText.innerHTML = "Read less";
+            //     moreText.style.display = "inline";
+            // }
+        }
+    </script>
 </body>
 
 </html>

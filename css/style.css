@@ -150,6 +150,23 @@ i:before {
   font-weight: 500;
 }
 
+/*blog section*/
+.card_blog {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.card_blog:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container_blog {
+  padding: 10px 25px;
+}
+/*end blog section*/
+
 /*=============Main Menu Area css============================ */
 .main_menu_area {
   position: absolute;
