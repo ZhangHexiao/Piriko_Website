@@ -124,6 +124,13 @@ i:before {
   text-align: center;
 }
 
+.section_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .poster img{
   display: block;
   margin-left: auto;
