@@ -60,6 +60,8 @@ function postRequest(url, obj){
 }
 
 var subscribeInputId = document.getElementById("subscribeInputId");
+var subscribeInputFirstname = document.getElementById("subscribeInputFirstname");
+var subscribeInputLastname = document.getElementById("subscribeInputLastname");
 subscribeInputId.addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
         event.preventDefault();
@@ -69,25 +71,29 @@ subscribeInputId.addEventListener("keyup", function (event) {
 
 function saveSubscriber() {
     let email = subscribeInputId.value;
+    let firstname = subscribeInputFirstname.value;
+    console.log(firstname.length);
+    let lastname = subscribeInputLastname.value;
     email = email && typeof email ? email.replace(/\s/g, '') : '';    //strip spaces
-    if(isValidEmail(email)&&document.getElementById("subscribeInputFirstname")!=null&&document.getElementById("subscribeInputFirstname")!=null) {
+    if(isValidEmail(email)&&firstname.length>0&&lastname.length>0) {
       var url = 'https://4dm5wtnzqc.execute-api.us-east-1.amazonaws.com/production/subscribe';
       postRequest(url, { email: email });
       subscribeInputId.value = '';
       subscribeInputId.style.setProperty("border", "1px solid green");
+      subscribeInputFirstname.style.setProperty("border", "1px solid green");
+      subscribeInputLastname.style.setProperty("border", "1px solid green");
       showToast(true, true);
     } else {
         if(!isValidEmail(email)){
-            console.log('here email');
-            subscribeInputId.style.setProperty("border", "1px solid red");
+            subscribeInputId.style.setProperty("border", "1px solid grey");
             showToast(false, true);
         }
-        else if(document.getElementById("subscribeInputFirstname")==null){
-            subscribeInputId.style.setProperty("border", "1px solid red");
+        else if(firstname.length==0){
+            subscribeInputFirstname.style.setProperty("border", "1px solid red");
             showToast(false, false);
         }
-        else if(document.getElementById("subscribeInputFirstname")==null){
-            subscribeInputId.style.setProperty("border", "1px solid red");
+        else if(lastname.length==0){
+            subscribeInputLastname.style.setProperty("border", "1px solid red");
             showToast(false, false);
         }
     }
@@ -106,6 +112,8 @@ function showToast(isSuccess, isEmailError) {
         subscribeToast.style.setProperty("background-color", "lightgreen");
         setTimeout(()=>{
             subscribeInputId.style.setProperty("border", "1px solid #ced4da");
+            subscribeInputFirstname.style.setProperty("border", "1px solid #ced4da");
+            subscribeInputLastname.style.setProperty("border", "1px solid #ced4da");
             subscribeToast.style.setProperty("display", "none");
         }, 3000);
     } else {
