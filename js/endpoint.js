@@ -77,8 +77,10 @@ function saveSubscriber() {
     email = email && typeof email ? email.replace(/\s/g, '') : '';    //strip spaces
     if(isValidEmail(email)&&firstname.length>0&&lastname.length>0) {
       var url = 'https://4dm5wtnzqc.execute-api.us-east-1.amazonaws.com/production/subscribe';
-      postRequest(url, { email: email });
+      postRequest(url, { email: email, firstname: firstname, lastname: lastname });
       subscribeInputId.value = '';
+      subscribeInputFirstname.value = '';
+      subscribeInputLastname.value = '';
       subscribeInputId.style.setProperty("border", "1px solid green");
       subscribeInputFirstname.style.setProperty("border", "1px solid green");
       subscribeInputLastname.style.setProperty("border", "1px solid green");
