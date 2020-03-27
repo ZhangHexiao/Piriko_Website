@@ -75,6 +75,29 @@
   padding-left: 25px;
 }
 
+.email-input-class2 {
+  border-radius: 50px 50px 50px 50px;
+  width: 50%;
+  height: 50px;
+  padding-left: 25px;
+}
+
+.email-input-class3 {
+  border-radius: 50px 50px 50px 50px;
+  width: 50%;
+  height: 50px;
+  padding-left: 25px;
+}
+
+.input-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
 body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #000;

@@ -59,8 +59,8 @@ function postRequest(url, obj){
   Http.send(JSON.stringify(obj));
 }
 
-var subscribeInput = document.getElementById("subscribeInputId");
-subscribeInput.addEventListener("keyup", function (event) {
+var subscribeInputId = document.getElementById("subscribeInputId");
+subscribeInputId.addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
         event.preventDefault();
         saveSubscriber();
@@ -68,17 +68,28 @@ subscribeInput.addEventListener("keyup", function (event) {
 });
 
 function saveSubscriber() {
-    let email = subscribeInput.value;
+    let email = subscribeInputId.value;
     email = email && typeof email ? email.replace(/\s/g, '') : '';    //strip spaces
-    if(isValidEmail(email)) {
+    if(isValidEmail(email)&&document.getElementById("subscribeInputFirstname")!=null&&document.getElementById("subscribeInputFirstname")!=null) {
       var url = 'https://4dm5wtnzqc.execute-api.us-east-1.amazonaws.com/production/subscribe';
       postRequest(url, { email: email });
-      subscribeInput.value = '';
-      subscribeInput.style.setProperty("border", "1px solid green");
-      showToast(true);
+      subscribeInputId.value = '';
+      subscribeInputId.style.setProperty("border", "1px solid green");
+      showToast(true, true);
     } else {
-      subscribeInput.style.setProperty("border", "1px solid red");
-      showToast(false);
+        if(!isValidEmail(email)){
+            console.log('here email');
+            subscribeInputId.style.setProperty("border", "1px solid red");
+            showToast(false, true);
+        }
+        else if(document.getElementById("subscribeInputFirstname")==null){
+            subscribeInputId.style.setProperty("border", "1px solid red");
+            showToast(false, false);
+        }
+        else if(document.getElementById("subscribeInputFirstname")==null){
+            subscribeInputId.style.setProperty("border", "1px solid red");
+            showToast(false, false);
+        }
     }
 
 }
@@ -89,17 +100,23 @@ function isValidEmail(email) {
 }
 
 var subscribeToast = document.getElementById("subscribeToastId");
-function showToast(isSuccess) {
+function showToast(isSuccess, isEmailError) {
     if(isSuccess) {
         subscribeToast.innerHTML = "Thank you for subscribing to Piriko.";
         subscribeToast.style.setProperty("background-color", "lightgreen");
         setTimeout(()=>{
-            subscribeInput.style.setProperty("border", "1px solid #ced4da");
+            subscribeInputId.style.setProperty("border", "1px solid #ced4da");
             subscribeToast.style.setProperty("display", "none");
         }, 3000);
     } else {
-        subscribeToast.innerHTML = "There is a problem with the email. Please check.";
-        subscribeToast.style.setProperty("background-color", "#FF3232");
+        if(isEmailError){
+            subscribeToast.innerHTML = "There is a problem with the email. Please check.";
+            subscribeToast.style.setProperty("background-color", "#FF3232");
+        }
+        else{
+            subscribeToast.innerHTML = "All fields are required";
+            subscribeToast.style.setProperty("background-color", "#FF3232");
+        }
     }
     subscribeToast.style.setProperty("display", "block");
 
