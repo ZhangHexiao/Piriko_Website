@@ -29,7 +29,7 @@
     <!--================Header Menu Area =================-->
     <header class="main_menu_area">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"> <img src="img/logo.png" alt=""></a>
+            <a class="navbar-brand pt-md-3 pt-sm-2" href="#"> <img src="img/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
@@ -38,18 +38,58 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="https://www.instagram.com/piriko_app/"><img class="menu_icon" src="img/icon/google-play.png"
+                    <!--<li class="nav-item"><a href="https://www.instagram.com/piriko_app/"><img class="menu_icon" src="img/icon/google-play.png"
                                                                                               alt=""></a></li>
                     <li class="nav-item"><a href="https://www.instagram.com/piriko_app/"><img class="menu_icon" src="img/icon/app.png"
-                                                                                              alt=""></a></li>
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#feature">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                                                                                              alt=""></a></li>-->
+                    <!--<li class="nav-item active"><a class="nav-link" href="#">Home</a></li>-->
+                    <!--<li class="nav-item"><a class="nav-link" href="#feature">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>-->
                 </ul>
             </div>
         </nav>
     </header>
     <!--================End Header Menu Area =================-->
+    <!-- For -->
+    <div class="custom-block-bar"></div>
+
+    <!--- signup -->
+    <section class="signup-container">
+        <div class="c_title">
+            <!--            <img src="img/icon/title-icon.png" alt="">-->
+            <h4 class="p-2">Get notified when we go live</h4>
+            <div class="container">
+                <div class="subscribe-container">
+                    <!--<div class="f_title">
+                        <h3>Subscribe to our newsletter to stay informed and become part of the app development process.</h3>
+                    </div>-->
+                    <!--                <div class="subscribe-wrapper">-->
+                    <div class="input-group input-name">
+                        <input id="subscribeInputFirstname" type="text" class="form-control email-input-class2"
+                               placeholder="First name"
+                               required
+                               aria-label="Your first name here">
+                        <input id="subscribeInputLastname" type="text" class="form-control email-input-class3"
+                               placeholder="Last name"
+                               required
+                               aria-label="Your last name here">
+                    </div>
+                    <div class="input-group">
+                        <input id="subscribeInputId" type="text" class="form-control email-input-class"
+                               required
+                               placeholder="Enter your e-mail here..."
+                               aria-label="Your e-mail address here">
+                        <span class="input-group-btn">
+                          <button onclick="saveSubscriber()" style="cursor: pointer" class="btn btn-secondary submit_btn" type="submit">Subscribe</button>
+                        </span>
+                    </div>
+                </div>
+                <p id="subscribeToastId" class="subscribeToast"></p>
+            </div>
+            <!--            </div>-->
+        </div>
+    </section>
+
     <!--================PirikoApp Screen Slider Area ==========================-->
     <section class="main_slider_area">
         <div id="main_slider" class="rev_slider" data-version="5.3.1.6">
@@ -70,7 +110,7 @@
                             data-lineheight="['82','82','82','62','62','42']" data-width="['none']" data-height="none"
                             data-whitespace="nowrape" data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['left','left','left','left','center','center']">Discover <br />and Connect
+                            data-textAlign="['left','left','left','left','center','center']">All Your Classes <br />at a Glance
                         </div>
 
                         <div class="tp-caption tp-resizeme secand_text"
@@ -84,8 +124,8 @@
                             data-whitespace="nowrape" data-type="text" data-responsive_offset="on"
                             data-transform_idle="o:1;"
                             data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                            data-textAlign="['left','left','left','left','center','center']"></br>Know what is happening
-                            around you <br />Create and promote your own events
+                            data-textAlign="['left','left','left','left','center','center']">
+                            </br>Join your community of students <br />that are enrolled in your classes
                         </div>
 
                         <div class="tp-caption tp-resizeme single_img"
@@ -98,7 +138,7 @@
                             data-frames='[{"delay":0,"speed":2550,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":2550,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['left','left','left','left','left','center']">
 
-                            <img src="img/home-slider/slider-m-1.png" alt="">
+                            <img src="img/home-slider/slider-m-1_old.png" alt="">
                         </div>
                     </div>
                 </li>
@@ -119,7 +159,8 @@
                             data-lineheight="['82','82','82','62','62','42']" data-width="['none']" data-height="none"
                             data-whitespace="nowrape" data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['left','left','left','left','center','center']">Join<br />and Communicate
+                            data-textAlign="['left','left','left','left','center','center']">
+                            Join<br />and Communicate
                         </div>
 
                         <div class="tp-caption tp-resizeme secand_text"
@@ -133,8 +174,8 @@
                             data-whitespace="nowrape" data-type="text" data-responsive_offset="on"
                             data-transform_idle="o:1;"
                             data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                            data-textAlign="['left','left','left','left','center','center']"></br>Check out the
-                            organizers, the crowd and the vibe <br />Share and view live media of the event
+                            data-textAlign="['left','left','left','left','center','center']">
+                            Create discussion threads to prepare for exams <br />and collaborate on coursework
                         </div>
 
                         <div class="tp-caption tp-resizeme single_img"
@@ -167,7 +208,58 @@
                             data-lineheight="['82','82','82','62','62','42']" data-width="['none']" data-height="none"
                             data-whitespace="nowrape" data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['left','left','left','left','center','center']">Socialize </br>and Connect
+                            data-textAlign="['left','left','left','left','center','center']">
+                            Host <br/>and Discover
+                        </div>
+
+                        <div class="tp-caption tp-resizeme secand_text"
+                            data-x="['left','left','left','left','center','center']"
+                            data-hoffset="['70','70','0','0','0','-200']"
+                            data-y="['top','top','top','top','bottom','top']"
+                            data-voffset="['575','575','575','400','40','300']"
+                            data-fontsize="['24','24','24','18','30','16']"
+                            data-lineheight="['36','36','36','26','32','26']"
+                            data-width="['none','none','none','none','none']" data-height="none"
+                            data-whitespace="nowrape" data-type="text" data-responsive_offset="on"
+                            data-transform_idle="o:1;"
+                            data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                            data-textAlign="['left','left','left','left','center','center']">
+                            Discover study sessions happening in your surroundings <br/>
+                            or create your own and invite your following
+                        </div>
+
+                        <div class="tp-caption tp-resizeme single_img"
+                            data-x="['right','right','right','right','center','right']"
+                            data-hoffset="['0','0','0','0','0','0']" data-y="['top','top','top','top','top','top']"
+                            data-voffset="['180','180','180','100','150','0']"
+                            data-fontsize="['65','65','60','40','25']" data-lineheight="['75','75','75','50','35']"
+                            data-width="['350','350','350','350','350']" data-height="none" data-whitespace="normal"
+                            data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":0,"speed":2550,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":2550,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['left','left','left','left','left','center']">
+                            <img src="img/home-slider/slider-m-3.png" alt="">
+                        </div>
+                    </div>
+                </li>
+
+                <li data-index="rs-1590" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                    data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
+                    data-rotate="0" data-saveperformance="off" data-title="Creative" data-param1="01" data-param2=""
+                    data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                    data-param9="" data-param10="" data-description="">
+
+                    <!-- LAYER NR. 4 -->
+                    <div class="slider_text_box">
+                        <div class="tp-caption tp-resizeme first_text"
+                            data-x="['left','left','left','left','center','center']"
+                            data-hoffset="['70','70','0','0','0','-200']"
+                            data-y="['top','top','top','top','bottom','bottom']"
+                            data-voffset="['400','400','400','250','150','180']"
+                            data-fontsize="['75','65','58','50','55','30']"
+                            data-lineheight="['82','82','82','62','62','42']" data-width="['none']" data-height="none"
+                            data-whitespace="nowrape" data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['left','left','left','left','center','center']">Socialize <br/>and Connect
                         </div>
 
                         <div class="tp-caption tp-resizeme secand_text"
@@ -195,7 +287,7 @@
                             data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":0,"speed":2550,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":2550,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['left','left','left','left','left','center']">
-                            <img src="img/home-slider/slider-m-3.png" alt="">
+                            <img src="img/home-slider/slider-m-4.png" alt="">
                         </div>
                     </div>
                 </li>
@@ -215,44 +307,9 @@
     </section>
     <!--================End Slider Area ==============================================-->
 
-    <section class="feature_area">
-        <div class="c_title">
-            <br>
-<!--            <img src="img/icon/title-icon.png" alt="">-->
-            <h3>Stay Informed</h3>
-            <div class="container">
-                <div class="subscribe-container">
-                    <div class="f_title">
-                        <h3>Subscribe to our newsletter to stay informed and become part of the app development process.</h3>
-                    </div>
-                    <!--                <div class="subscribe-wrapper">-->
-                    <div class="input-group input-name">
-                        <input id="subscribeInputFirstname" type="text" class="form-control email-input-class2"
-                               placeholder="First name"
-                               required
-                               aria-label="Your first name here">
-                        <input id="subscribeInputLastname" type="text" class="form-control email-input-class3"
-                               placeholder="Last name"
-                               required
-                               aria-label="Your last name here">
-                    </div>
-                    <div class="input-group">
-                        <input id="subscribeInputId" type="text" class="form-control email-input-class"
-                               required
-                               placeholder="Enter your e-mail here..."
-                               aria-label="Your e-mail address here">
-                        <span class="input-group-btn">
-                          <button onclick="saveSubscriber()" style="cursor: pointer" class="btn btn-secondary submit_btn" type="submit">Subscribe</button>
-                        </span>
-                    </div>
-                </div>
-                <p id="subscribeToastId" class="subscribeToast"></p>
-            </div>
-<!--            </div>-->
-        </div>
-    </section>
+    <!-- signup was here -->
 
-    <section class="feature_area">
+<!--    <section class="feature_area">
         <br>
         <div class="section_title">
             <img src="img/icon/title-icon.png" alt=""><h3>&nbsp;&nbsp;Blog Updates</h3>
@@ -289,7 +346,7 @@
         </div>
     </section>
 
-    <!--================Discover Feature==============================================-->
+    &lt;!&ndash;================Discover Feature==============================================&ndash;&gt;
     <section id="feature" class="feature_area">
         <br>
         <div class="section_title">
@@ -303,9 +360,9 @@
                     <p>Discover</p>
                 </div>
                 <div class="back">
-                    <!-- <div class="f_icon">
+                    &lt;!&ndash; <div class="f_icon">
                         <img src="img/icon/f-icon-1.png" alt="">
-                    </div> -->
+                    </div> &ndash;&gt;
                     <div style="margin-top: -20px;">
                         <p></br></p>
                         <p>An interactive map view turns your drab calendar into a nexus of activity.
@@ -322,9 +379,9 @@
                     <p>Organize and Empower</p>
                 </div>
                 <div class="back">
-                    <!-- <div class="f_icon">
+                    &lt;!&ndash; <div class="f_icon">
                         <img src="img/icon/f-icon-2.png" alt="">
-                    </div> -->
+                    </div> &ndash;&gt;
                     <div>
                         <p></br></p>
                         <p>Create public or private events and activities.<br><br>
@@ -338,9 +395,9 @@
                     <p>Connect and Share</p>
                 </div>
                 <div class="back">
-                    <!-- <div class="f_icon">
+                    &lt;!&ndash; <div class="f_icon">
                         <img src="img/icon/f-icon-3.png" alt="">
-                    </div> -->
+                    </div> &ndash;&gt;
                     <div style="margin-top: -40px;">
                         <p></br></p>
                         <p>Geolocation automatically signs in guests.<br><br>
@@ -353,10 +410,10 @@
             </div>
         </div>
     </section>
-    <!--=================End of Descover Feature================================-->
-    <!--================Why Piriko Area =================-->
-    <!--================End of Piriko Area =================-->
-    <!--=================Event Swipe Section===================================-->
+    &lt;!&ndash;=================End of Descover Feature================================&ndash;&gt;
+    &lt;!&ndash;================Why Piriko Area =================&ndash;&gt;
+    &lt;!&ndash;================End of Piriko Area =================&ndash;&gt;
+    &lt;!&ndash;=================Event Swipe Section===================================&ndash;&gt;
     <section class="pc-banner">
         <div class="section_title">
             <img src="img/icon/title-icon.png" alt="">
@@ -413,7 +470,7 @@
                     </div>
                     <div class="layer-mask"></div>
                 </div>
-                <!-- <div class="swiper-slide">
+                &lt;!&ndash; <div class="swiper-slide">
                     <div class="blog_main_item">
                         <div class="blog_img">
                             <img class="img-fluid" src="img/blog/blog-1.jpg" alt="">
@@ -435,7 +492,7 @@
                         </div>
                     </div>
                     <div class="layer-mask"></div>
-                </div> -->
+                </div> &ndash;&gt;
             </div>
             <div class="button">
                 <div class="swiper-button-prev"></div>
@@ -443,24 +500,24 @@
             </div>
         </div>
     </section>
-    <!--================End of Event Swipt Section===========================================-->
-    <!--================Piriko Milestone Section ============================================-->
+    &lt;!&ndash;================End of Event Swipt Section===========================================&ndash;&gt;
+    &lt;!&ndash;================Piriko Milestone Section ============================================&ndash;&gt;
     <section class="milestone-area">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="milestone_text">
-                        <!--===================Timeline format=====================================================================-->
+                        &lt;!&ndash;===================Timeline format=====================================================================&ndash;&gt;
                         <div class="container-fluid blue-bg">
                             <div class="section_title">
-<!--                                <img src="img/logo.png" alt="">-->
+&lt;!&ndash;                                <img src="img/logo.png" alt="">&ndash;&gt;
                                 <img src="img/icon/title-icon.png" alt="">
                                 <h3>&nbsp;&nbsp;Milestones</h3>
                                 <h6><br></h6>
                             </div>
                             <div class="container">
-                                <!-- <h2 class="pb-3 pt-2">Vertical Left-Right Timeline</h2> -->
-                                <!--first section-->
+                                &lt;!&ndash; <h2 class="pb-3 pt-2">Vertical Left-Right Timeline</h2> &ndash;&gt;
+                                &lt;!&ndash;first section&ndash;&gt;
                                 <div class="row align-items-center how-it-works">
                                     <div class="col-2 text-center bottom">
                                         <div class="circle">Aug.2019</div>
@@ -468,10 +525,10 @@
                                     <div class="col-8">
                                         <p>Blakes, Cassels & Graydon LLP
                                             Signed as Piriko’s legal counsel</p>
-                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> -->
+                                        &lt;!&ndash; <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> &ndash;&gt;
                                     </div>
                                 </div>
-                                <!--path between 1-2-->
+                                &lt;!&ndash;path between 1-2&ndash;&gt;
                                 <div class="row timeline">
                                     <div class="col-2">
                                         <div class="corner top-right"></div>
@@ -483,18 +540,18 @@
                                         <div class="corner left-bottom"></div>
                                     </div>
                                 </div>
-                                <!--second section-->
+                                &lt;!&ndash;second section&ndash;&gt;
                                 <div class="row align-items-center justify-content-end how-it-works">
                                     <div class="col-8 text-right">
                                         <p>AJ Collective Collaboration agreement for future events sponsored by Piriko
                                         </p>
-                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                        &lt;!&ndash; <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> &ndash;&gt;
                                     </div>
                                     <div class="col-2 text-center full-right">
                                         <div class="circle">Sep.2019</div>
                                     </div>
                                 </div>
-                                <!--path between 2-3-->
+                                &lt;!&ndash;path between 2-3&ndash;&gt;
                                 <div class="row timeline">
                                     <div class="col-2">
                                         <div class="corner right-bottom"></div>
@@ -506,17 +563,17 @@
                                         <div class="corner top-left"></div>
                                     </div>
                                 </div>
-                                <!--third section-->
+                                &lt;!&ndash;third section&ndash;&gt;
                                 <div class="row align-items-center how-it-works">
                                     <div class="col-2 text-center full-left">
                                         <div class="circle">Oct.2019</div>
                                     </div>
                                     <div class="col-8">
                                         <p>Piriko Inc Incorperated under the Business Corperations Act</p>
-                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                        &lt;!&ndash; <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> &ndash;&gt;
                                     </div>
                                 </div>
-                                <!--path between 3-4-->
+                                &lt;!&ndash;path between 3-4&ndash;&gt;
                                 <div class="row timeline">
                                     <div class="col-2">
                                         <div class="corner top-right"></div>
@@ -528,17 +585,17 @@
                                         <div class="corner left-bottom"></div>
                                     </div>
                                 </div>
-                                <!--forth section-->
+                                &lt;!&ndash;forth section&ndash;&gt;
                                 <div class="row align-items-center justify-content-end how-it-works">
                                     <div class="col-8 text-right">
                                         <p>iOS Testflight and Andoid Apk launch</p>
-                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                        &lt;!&ndash; <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> &ndash;&gt;
                                     </div>
                                     <div class="col-2 text-center full-right">
                                         <div class="circle">Nov.2019</div>
                                     </div>
                                 </div>
-                                <!--path between 4-end-->
+                                &lt;!&ndash;path between 4-end&ndash;&gt;
                                 <div class="row timeline">
                                     <div class="col-2">
                                         <div class="corner right-bottom"></div>
@@ -557,12 +614,12 @@
                                     </div>
                                     <div class="col-8">
                                         <h5>To be continued</h5>
-                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                                        &lt;!&ndash; <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> &ndash;&gt;
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--============================End of Timeline Format=====================================================-->
+                        &lt;!&ndash;============================End of Timeline Format=====================================================&ndash;&gt;
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -594,13 +651,13 @@
             </div>
         </div>
     </section>
-    <!--================End of Piriko Milestone Section ============================================-->
-    <!--================Piriko Team Section=========================================================-->
+    &lt;!&ndash;================End of Piriko Milestone Section ============================================&ndash;&gt;
+    &lt;!&ndash;================Piriko Team Section=========================================================&ndash;&gt;
     <section class="team_area">
         <div class="team_title">
-            <!-- <img src="img/icon/team-icon.png" alt=""> -->
+            &lt;!&ndash; <img src="img/icon/team-icon.png" alt=""> &ndash;&gt;
             <h3>Our Team</h3>
-            <!-- <img src="img/team/whoteam.png" alt="">   -->
+            &lt;!&ndash; <img src="img/team/whoteam.png" alt="">   &ndash;&gt;
         </div>
         <div class="container">
             <div class="testimonials_slider owl-carousel">
@@ -788,7 +845,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
+
     <!--================End of Piriko Team Section =======================================================================-->
     <!--================Footer Area =================================================================-->
     <footer class="footr_area" id="contact">
@@ -806,7 +864,6 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <aside class="f_widget f_insta_widget">
-
                             <ul>
                                 <li><a href="https://www.instagram.com/piriko_app/"><img src="img/footer_icon/instagram.png"
                                             alt=""></a></li>
@@ -814,7 +871,7 @@
                                             src="img/footer_icon/linkedin.png" alt=""></a></li>
                                 <li><a href="https://www.facebook.com/Piriko-122175115851869/"><img
                                             src="img/footer_icon/facebook.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/footer_icon/twitter.png" alt=""></a></li>
+                                <!--<li><a href="#"><img src="img/footer_icon/twitter.png" alt=""></a></li>-->
                             </ul>
                         </aside>
                     </div>
